@@ -9,6 +9,9 @@ body {
     background-color: #fff0f7;
     border: 20px solid transparent;
     border-image: url('imgs/border.png') 30 round;
+    -moz-border-image: url('imgs/border.png') 30 round;
+    -webkit-border-image: url('imgs/border.png') 30 round;
+    -o-border-image: url('imgs/border.png') 30 round;
     position: relative; /* Agregado para posicionar las imágenes */
 }
 
