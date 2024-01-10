@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Hello Kitty Page</title>
+</head>
+<body>
+    <img src="imgs/hk1.png" style="z-index: 10" alt="Izquierda" class="corner-image corner-left"/>
+    <img src="imgs/hk2.png" style="z-index: 10" alt="Derecha" class="corner-image corner-right"/>
+    <main class="main-container">
+        <div class="container" style="margin-top: 3rem">
+            <h1>Do you accept Yeray as your boyfriend?</h1>
+            <div class="buttons">
+                <a href="https://wa.me/676454383?text=Of%20course%20I%20want%20to%20be%20your%20girlfriend%20%3C3" target="_blank" class="button button-primary">Sí</a>
+                <button id="noButton" class="button button-secondary" onmouseover="moveButton()" ontouchstart="moveButton()">No</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
