@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff0f7;
+    border: 20px solid transparent;
+    border-image: url('imgs/border.png') 30 round;
+    position: relative; /* Agregado para posicionar las imágenes */
+}
+
+.corner-image {
+    position: absolute;
+    bottom: 0;
+}
+
+.corner-left {
+    left: 0;
+}
+
+.corner-right {
+    right: 0;
+}
+
+main.main-container {
+    background-color: #ffd6eb;
+    margin: 0;
+    height: calc(100vh - 40px);
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #ff0066;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    position: relative;
+    width: fit-content;
+}
+
+.button-primary {
+    background-color: #ff0066;
+    color: #fff;
+}
+
+.button-secondary {
+    background-color: #ff99cc;
+    color: #ff0066;
+    z-index: 1000;
+}
+
+/* Estilos de hover y clic */
+.button:hover {
+    opacity: 0.8;
+}
+
+.button-primary:hover {
+    background-color: #e5005b;
+}
+
+.button-secondary:hover {
+    background-color: #ff66b2;
+}
+
+.button:active {
+    transform: translateY(2px);
+}
+
+.button-primary:active {
+    background-color: #cc004f;
+}
+
+.button-secondary:active {
+    background-color: #ff3385;
+}
+
+@media only screen and (max-width: 600px) {
+    .corner-image {
+        width: 50px; /* Ajusta el tamaño de las imágenes según sea necesario */
+        height: auto; /* Mantén la proporción de aspecto */
+    }
+}
